@@ -10,11 +10,7 @@
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,15 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](images/solution.png)
 
 ### Links
 
@@ -48,16 +36,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML5
+- CSS3
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -66,48 +47,108 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<section class="left">
+  <img class="vehicle-icon" src="images/icon-sedans.svg" alt="sedan" />
+  <h1>SEDANS</h1>
+  <p class="vehicle-text">
+    Sedans Choose a sedan for its affordability and excellent fuel economy.
+    Ideal for cruising in the city or on your next road trip.
+  </p>
+  <button>Learn More</button>
+</section>
+
+<section class="middle">
+  <img class="vehicle-icon" src="images/icon-sedans.svg" alt="sedan" />
+  <h1>SUVS</h1>
+  <p class="vehicle-text">
+    SUVs Take an SUV for its spacious interior, power, and versatility. Perfect
+    for your next family vacation and off-road adventures.
+  </p>
+  <button>Learn More</button>
+</section>
+
+<section class="right">
+  <a href="#"
+    ><img class="vehicle-icon" src="images/icon-sedans.svg" alt="sedan"
+  /></a>
+  <h1>LUXURY</h1>
+  <p class="vehicle-text">
+    Luxury Cruise in the best car brands without the bloated prices. Enjoy the
+    enhanced comfort of a luxury rental and arrive in style.
+  </p>
+  <button>Learn More</button>
+</section>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+}
+
+h1 {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-size: 32px;
+  margin: 1.75rem 0;
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 20px;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 5rem 0 0 0;
+  width: 65%;
+  font-size: 16px;
+  height: 3rem;
+  border: transparent;
+}
+
+.left button:hover,
+.middle button:hover,
+.right button:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.left button,
+.left img {
+  color: rgba(227, 136, 38, 0.7);
+}
+
+.middle button,
+.middle img {
+  color: rgba(0, 105, 112, 0.7);
+}
+
+.right button,
+.right img {
+  color: rgba(0, 66, 65, 0.7);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  max-height: 100%;
+  width: 80%;
+  height: 400px;
+  border-radius: 10px;
 }
 ```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@DevTruce](https://www.frontendmentor.io/profile/DevTruce)
