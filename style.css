@@ -135,8 +135,9 @@ html {
 
 body {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   background-color: hsl(0, 0%, 95%);
 }
@@ -209,6 +210,24 @@ button {
   padding: 3rem;
 }
 
+.attribution {
+  display: flex;
+  justify-content: flex-end;
+  color: #2e3840;
+}
+
+.attribution a {
+  color: #2e3840;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  font-size: 1.25rem;
+  transition: font-size 250ms ease-in-out;
+}
+
 .left {
   background-color: hsl(31, 77%, 52%);
   border-radius: 10px 0 0 10px;
@@ -258,5 +277,9 @@ button {
 
   button {
     font-size: 0.6rem;
+  }
+
+  .attribution {
+    display: none;
   }
 }
