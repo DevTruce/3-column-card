@@ -1,4 +1,4 @@
-# Frontend Mentor - 3-column preview card component solution
+# Frontend Mentor - 3 column preview card component solution
 
 ## Table of contents
 
