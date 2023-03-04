@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [FEM Solution](https://www.frontendmentor.io/solutions/3-column-component-preview-card-challenge-NkLj_LR261)
+- Live Site URL: [Live Site](https://devtruce.github.io/3-column-card/)
 
 ## My process
 
@@ -147,7 +147,7 @@ button {
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+My main focus is still using flexbox better as well as relative units over absolute units.
 
 ## Author
 
