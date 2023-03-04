@@ -8,7 +8,6 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
 
@@ -34,17 +33,15 @@ Users should be able to:
 
 ## My process
 
+I had a fun time with this challenge and it was great to help get some real practice while learning, I enjoyed using flexbox to layout the elements and for the most part I think I did the challenge relatively well for where I am at in my learning journey. I am disappointed that I was unable to get the colors correct on the image but I will come back to that and get it working correctly.
+
 ### Built with
 
 - HTML5
 - CSS3
 - Flexbox
 
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+### Built with
 
 ```html
 <section class="left">
