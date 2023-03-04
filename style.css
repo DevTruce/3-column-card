@@ -161,6 +161,7 @@ button {
   font-size: 16px;
   height: 3rem;
   border: transparent;
+  transition: all 250ms ease-in-out;
 }
 
 .left button:hover,
@@ -169,6 +170,7 @@ button {
   background-color: transparent;
   color: white;
   border: 1px solid white;
+  cursor: pointer;
 }
 
 .left button,
