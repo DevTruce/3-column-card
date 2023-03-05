@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
-    <!-- LINK -->
     <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
@@ -13,72 +11,50 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- LINK -->
-
     <title>Frontend Mentor | 3-column preview card component</title>
   </head>
   <body>
     <main class="container">
-      <section class="left">
-        <img
-          class="vehicle-icon"
-          src="images/icon-sedans.svg"
-          alt="sedan icon"
-        />
-        <h1>SEDANS</h1>
+      <!-- LEFT PANEL -->
+      <section class="sedan">
+        <div class="vehicle-icon"><a href="#NOWHERE"></a></div>
+        <h2 class="vehicle-heading">SEDANS</h2>
+        <p class="vehicle-text">
+          Choose a sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </p>
+        <a class="learn-more" ref="#Learn-More">Learn More</a>
+      </section>
+
+      <!-- MIDDLE PANEL -->
+      <section class="suv">
+        <div class="vehicle-icon"><a href="#NOWHERE"></a></div>
+        <h2 class="vehicle-heading">SUV</h2>
+        <p class="vehicle-text">
+          Choose a sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </p>
+        <a class="learn-more" ref="#Learn-More">Learn More</a>
+      </section>
+
+      <!-- RIGHT PANEL -->
+      <section class="luxury">
+        <div class="vehicle-icon"><a href="#NOWHERE"></a></div>
+        <h2 class="vehicle-heading">Luxury</h2>
         <p class="vehicle-text">
           Sedans Choose a sedan for its affordability and excellent fuel
           economy. Ideal for cruising in the city or on your next road trip.
         </p>
-        <button>Learn More</button>
-      </section>
-
-      <section class="middle">
-        <img class="vehicle-icon" src="images/icon-suvs.svg" alt="suvs icon" />
-        <h1>SUVS</h1>
-        <p class="vehicle-text">
-          SUVs Take an SUV for its spacious interior, power, and versatility.
-          Perfect for your next family vacation and off-road adventures.
-        </p>
-        <button>Learn More</button>
-      </section>
-
-      <section class="right">
-        <a href="#"
-          ><img
-            class="vehicle-icon"
-            src="images/icon-luxury.svg"
-            alt="luxury car icon"
-        /></a>
-        <h1>LUXURY</h1>
-        <p class="vehicle-text">
-          Luxury Cruise in the best car brands without the bloated prices. Enjoy
-          the enhanced comfort of a luxury rental and arrive in style.
-        </p>
-        <button>Learn More</button>
+        <a class="learn-more" ref="#Learn-More">Learn More</a>
       </section>
     </main>
-    <footer class="attribution">
+    <!-- <footer class="attribution">
       <p>
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="https://github.com/DevTruce">Truce R</a>.
       </p>
-    </footer>
+    </footer> -->
   </body>
 </html>
