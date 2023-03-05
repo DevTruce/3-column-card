@@ -31,7 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border: 3px solid red;
+  /* border: 3px solid red; */
   box-shadow: 0 0 3px 1px #2c3333;
   margin: 5rem 1.5rem;
   border-radius: 0.7rem;
