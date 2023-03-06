@@ -13,6 +13,7 @@
   padding: 0;
   letter-spacing: 0.05rem;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -134,14 +135,21 @@ body {
 }
 
 .attribution {
-  margin-bottom: 1rem;
-  display: flex;
-  color: grey;
-  align-self: center;
+  position: fixed;
+  bottom: 0;
+  padding: 0.75rem;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(
+    0.25turn,
+    var(--dark-cyan),
+    var(--bright-orange),
+    var(--very-darkcyan)
+  );
 }
 
 .attribution a {
-  color: var(--bright-orange);
+  color: var(--dark-cyan);
 }
 
 .attribution a:hover {
@@ -159,11 +167,11 @@ body {
     margin-top: 7rem;
   }
 
-  .attribution {
+  /* .attribution {
     position: fixed;
     bottom: 0;
     margin-bottom: 1rem;
-  }
+  } */
 }
 
 /* Desktops */
