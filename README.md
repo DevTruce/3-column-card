@@ -1,5 +1,7 @@
 # Frontend Mentor - 3 column preview card component solution
 
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -12,8 +14,6 @@
 - [Author](#author)
 
 ## Overview
-
-This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### The challenge
 
@@ -44,101 +44,58 @@ I had a fun time with this challenge and it was great to help get some real prac
 ### Built with
 
 ```html
-<section class="left">
-  <img class="vehicle-icon" src="images/icon-sedans.svg" alt="sedan" />
-  <h1>SEDANS</h1>
+<section class="sedan">
+  <div class="vehicle-icon"><a href="#NOWHERE"></a></div>
+  <h2 class="vehicle-heading">SEDANS</h2>
   <p class="vehicle-text">
-    Sedans Choose a sedan for its affordability and excellent fuel economy.
-    Ideal for cruising in the city or on your next road trip.
+    Choose a sedan for its affordability and excellent fuel economy. Ideal for
+    cruising in the city or on your next road trip.
   </p>
-  <button>Learn More</button>
-</section>
-
-<section class="middle">
-  <img class="vehicle-icon" src="images/icon-sedans.svg" alt="sedan" />
-  <h1>SUVS</h1>
-  <p class="vehicle-text">
-    SUVs Take an SUV for its spacious interior, power, and versatility. Perfect
-    for your next family vacation and off-road adventures.
-  </p>
-  <button>Learn More</button>
-</section>
-
-<section class="right">
-  <a href="#"
-    ><img class="vehicle-icon" src="images/icon-sedans.svg" alt="sedan"
-  /></a>
-  <h1>LUXURY</h1>
-  <p class="vehicle-text">
-    Luxury Cruise in the best car brands without the bloated prices. Enjoy the
-    enhanced comfort of a luxury rental and arrive in style.
-  </p>
-  <button>Learn More</button>
+  <a class="learn-more" href="#Learn-More">Learn More</a>
 </section>
 ```
 
 ```css
 body {
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: hsl(0, 0%, 95%);
-}
-
-h1 {
-  font-family: "Big Shoulders Display";
-  font-weight: 700;
-  color: hsl(0, 0%, 95%);
-  text-transform: uppercase;
-  font-size: 32px;
-  margin: 1.75rem 0;
-}
-
-button {
-  background-color: hsl(0, 0%, 95%);
-  border-radius: 20px;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--semi-transp);
+  box-sizing: border-box;
   font-family: "Lexend Deca";
   font-weight: 400;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  margin: 5rem 0 0 0;
-  width: 65%;
-  font-size: 16px;
-  height: 3rem;
-  border: transparent;
-}
-
-.left button:hover,
-.middle button:hover,
-.right button:hover {
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-}
-
-.left button,
-.left img {
-  color: rgba(227, 136, 38, 0.7);
-}
-
-.middle button,
-.middle img {
-  color: rgba(0, 105, 112, 0.7);
-}
-
-.right button,
-.right img {
-  color: rgba(0, 66, 65, 0.7);
+  font-size: 0.938rem;
+  color: var(--very-lightgrey);
 }
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-evenly;
   max-width: 100%;
-  max-height: 100%;
-  width: 80%;
-  height: 400px;
-  border-radius: 10px;
+  /* border: 3px solid red; */
+  box-shadow: 0 0 3px 1px #2c3333;
+  margin: 5rem 1.5rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.vehicle-icon {
+  background-image: url(images/icon-sedans.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.vehicle-icon:hover,
+.vehicle-icon:focus {
+  transform: scale(1.2);
+  transition: transform 250ms ease-in-out;
 }
 ```
 
