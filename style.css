@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   letter-spacing: 0.05rem;
+  text-decoration: none;
 }
 
 body {
@@ -32,10 +33,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  max-width: 100%;
   /* border: 3px solid red; */
   box-shadow: 0 0 3px 1px #2c3333;
   margin: 5rem 1.5rem;
-  border-radius: 0.7rem;
+  border-radius: 0.4rem;
   overflow: hidden;
 }
 
@@ -140,7 +142,6 @@ body {
 
 .attribution a {
   color: var(--bright-orange);
-  text-decoration: none;
 }
 
 .attribution a:hover {
@@ -148,13 +149,14 @@ body {
   transition: font-size 250ms ease-in-out;
 }
 /* Tablets */
-@media (min-width: 850px) {
+@media (min-width: 860px) {
   .container {
     flex-direction: row;
+    width: 65rem;
   }
 
   .learn-more {
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
 
   .attribution {
