@@ -20,7 +20,7 @@
 <h3 align="center">3 Column Card Challenge</h3>
 
   <p align="center">
-    Frontend Mentor - 3 Column Card Challenge.
+    frontend mentor challenge.
     <br />
     <a href="https://github.com/DevTruce/3-column-card" target="_blank"><strong>Explore the docs »</strong></a>
     <br />
