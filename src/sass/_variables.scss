@@ -15,28 +15,31 @@ $color-font--dark: hsla(0, 0%, 100%, 0.75);
 $font-small: 1.2rem;
 $font-medium: 1.5rem;
 $font-large: 2rem;
-$font-huge: 2.8rem;
+$font-huge: 4rem;
 
 //////////////////////////////////////////////////
 // MEDIA QUERY MANAGER
+
+// built for desktop first!
+
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media only screen and (max-width: 47.9375em) {
-      // 767px and below
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 37.5em) {
+      // 600px
       @content;
     }
   }
 
   @if $breakpoint == tablet {
-    @media only screen and (min-width: 48em) and (max-width: 63.9375em) {
-      // 767px - 1023px
+    @media only screen and (max-width: 47.5em) {
+      // 760px
       @content;
     }
   }
 
   @if $breakpoint == desktop {
-    @media only screen and (min-width: 64em) {
-      // 1024px and above
+    @media only screen and (max-width: 60em) {
+      // 960px
       @content;
     }
   }
