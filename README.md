@@ -14,7 +14,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/DevTruce/3-column-card">
-    <img src="src/images//logo.png" alt="Logo" width="80" height="80">
+    <img src="src/imgs/favicon-32x32.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">3 Column Card Challenge</h3>
@@ -64,10 +64,6 @@
 
 [![Product Name Screen Shot][product-screenshot]](product-link)
 
-This project is a challenge created by frontend mentor and coded by me.
-The goal is to build a responsive webpage based on the images/designs they provide.
-This particular challenge has you building a simple 3 Column Card. There is some nice styles and hover effects. Hovering some select elements in the footer and card will give a nice effect you can check them out by visiting the website.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
@@ -78,20 +74,35 @@ This particular challenge has you building a simple 3 Column Card. There is some
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
-
 ## Getting Started
-
-[View Demo](https://devtruce.github.io/3-column-card/)
-<img src="src/images/step1.png" alt="">
-<img src="src/images/step2.png" alt="">
-<img src="src/images/step3.png" alt="">
 
 ### Prerequisites
 
-- Mobile Phone / Desktop / Tablet
-- Internet
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/DevTruce/3-column-card.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Dev environment
+   ```sh
+   npm run start
+   ```
+4. Build package
+   ```sh
+   npm run build
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- USAGE EXAMPLES -->
 
 ## Usage
@@ -132,14 +143,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 Email: [DevTruce@Gmail-icon]()
 
 Discord: [Xzypher#9999]()
-
-Project Link: [QR Code](https://github.com/DevTruce/3-column-card)
-
-[![FEM][fem-icon]][fem-link]<br>
-[![Reddit][reddit-icon]][reddit-link] <br>
-[![Twitter][twitter-icon]][twitter-link]<br>
-[![LinkedIn][linkedin-icon]][linkedin-link]<br>
-[![Stackoverflow][stackoverflow-icon]][stackoverflow-link]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
