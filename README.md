@@ -62,7 +62,8 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](product-link)
+[![Product Name Screen Shot][product-screenshot-1]](product-link)
+[![Product Name Screen Shot][product-screenshot-2]](product-link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,7 +176,8 @@ Discord: [Xzypher#9999]()
 
 <!-- ## Project ## -->
 
-[product-screenshot]: src/images/screenshot.png
+[product-screenshot-1]: src/imgs/project-view-1.png
+[product-screenshot-2]: src/imgs/project-view-2.png
 [product-link]: https://LINK-HERE
 
 <!-- ## Socials ## -->
