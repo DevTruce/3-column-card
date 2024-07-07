@@ -1,0 +1,46 @@
+//////////////////////////////////////////////////
+// COLORS
+$color-primary: hsl(31, 77%, 52%);
+$color-secondary: hsl(184, 100%, 22%);
+$color-tertiary: hsl(179, 100%, 13%);
+
+$color-white--1: hsla(0, 0%, 100%, 0.75);
+$color-white--2: hsl(0, 0%, 95%);
+
+$color-font--light: hsl(0, 0%, 95%);
+$color-font--dark: hsla(0, 0%, 100%, 0.75);
+
+//////////////////////////////////////////////////
+// FONTS
+$font-small: 1.2rem;
+$font-medium: 1.5rem;
+$font-large: 2rem;
+$font-huge: 4rem;
+
+//////////////////////////////////////////////////
+// MEDIA QUERY MANAGER
+
+// built for desktop first!
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 37.5em) {
+      // 600px
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 47.5em) {
+      // 760px
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 60em) {
+      // 960px
+      @content;
+    }
+  }
+}

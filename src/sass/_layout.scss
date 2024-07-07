@@ -1,0 +1,109 @@
+//////////////////////////////////////////////////
+// CONTAINER
+.card-box {
+  height: 50rem;
+  width: 92rem;
+
+  // grid settings
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include respond(mobile) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: 132.6rem;
+    width: 32.7rem;
+    margin: 10rem 0;
+  }
+}
+
+//////////////////////////////////////////////////
+// CARD
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 5rem;
+
+  &--left {
+    background-color: $color-primary;
+    border-radius: 1rem 0 0 1rem;
+
+    @include respond(mobile) {
+      border-radius: 1rem 1rem 0 0;
+    }
+  }
+  &--middle {
+    background-color: $color-secondary;
+  }
+  &--right {
+    background-color: $color-tertiary;
+    border-radius: 0 1rem 1rem 0;
+
+    @include respond(mobile) {
+      border-radius: 0 0 1rem 1rem;
+    }
+  }
+
+  &__icon {
+    height: 4.25rem;
+  }
+  &__header {
+    margin: 3rem 0;
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    font-size: $font-huge;
+  }
+  &__text {
+    line-height: 2.5rem;
+    color: $color-font--dark;
+  }
+
+  //group styles for btn/link
+  &__link {
+    &:link,
+    &:visited {
+      margin-top: auto;
+      padding: 2rem 4rem;
+      border-radius: 5rem;
+      background-color: $color-white--2;
+      text-decoration: none;
+      outline: 3px solid transparent;
+
+      @include respond(mobile) {
+        margin-top: 3rem;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: inherit;
+      outline: 2px solid $color-white--2;
+    }
+
+    //single styles for btn/link
+    &--1:link,
+    &--1:visited {
+      color: $color-primary;
+    }
+
+    &--2:link,
+    &--2:visited {
+      color: $color-secondary;
+    }
+
+    &--3:link,
+    &--3:visited {
+      color: $color-tertiary;
+    }
+
+    &--1:hover,
+    &--1:focus,
+    &--2:hover,
+    &--2:focus,
+    &--3:hover,
+    &--3:focus {
+      color: $color-white--2;
+    }
+  }
+}
