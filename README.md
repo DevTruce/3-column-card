@@ -18,7 +18,7 @@
 <h3 align="center">3 Column Card Challenge</h3>
 
   <p align="center">
-    completed frontend mentor challenge
+    A responsive 3 column feature card layout.
     <br />
     <br />
     <a href="https://devtruce.github.io/3-column-card/" target="_blank">View Demo</a>
